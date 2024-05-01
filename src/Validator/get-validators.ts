@@ -5,12 +5,16 @@ import { ethers } from "ethers";
 
 
 export async function getValidators(): Promise<void> {
-    new ethers.Contract(
+   const vals =  new ethers.Contract(
         contracts.STAKING_ADDRESS,
         STAKING,
         {
             provider: new ethers.JsonRpcProvider(mainnet_rpc.http)
         }
     );
+    const validators = await vals.validators();
+
+    return validators;
+
 }
 
