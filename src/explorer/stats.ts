@@ -3,7 +3,7 @@ import { explorer } from "../constants";
 
 async function getStats() {
   try {
-    const response = await axios.get(explorer.base);
+    const response = await axios.get(explorer.base+"/stats");
     return response.data;
   } catch (error) {
     console.error('Error fetching data:', error);

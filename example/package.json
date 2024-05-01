@@ -1,0 +1,15 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "getblock.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "nnlgsakib",
+  "license": "ISC",
+  "dependencies": {
+    "msc-js": "^0.1.2"
+  }
+}
