@@ -15,5 +15,6 @@ export async function convertWmindTomind(privateKey: string, amount: number): Pr
 
     const wethAmount = ethers.parseEther(amount.toString());
     const tx = await wethContract.withdraw(wethAmount);
-    await tx.wait();
+    await tx.wait(); // Wait for transaction to be confirmed
+    console.log("WMIND unwrapped");
 }

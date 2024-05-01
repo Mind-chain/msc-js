@@ -10,6 +10,6 @@
   "author": "nnlgsakib",
   "license": "ISC",
   "dependencies": {
-    "msc-js": "^0.1.2"
+    "msc-js": "^0.1.6"
   }
 }

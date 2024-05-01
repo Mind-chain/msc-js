@@ -18,5 +18,6 @@ export async function convertMINDToWMIND(privateKey: string, amount: number): Pr
         value: ethAmount // Amount of WMIND to wrap
     };
     const tx = await wmindContract.deposit(overrides); // Deposit MIND and get WMIND in return
-    await tx.wait(); // Wait for transaction to be confirmed
+     await tx.wait(); // Wait for transaction to be confirmed
+    console.log("WMIND Wrapped");
 }
